@@ -1,8 +1,11 @@
 module.exports = [
-  'science',
-  'technology',
-  'philosofy',
-  'business',
-  'pop-culture',
-  'history',
+  'traditional',
+  'romantic',
+  'sad',
+  'dong',
+  'lagne',
+  'baha',
+  'sohrai',
+  'dasai',
+  'guru kunami',
 ];
