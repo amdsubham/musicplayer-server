@@ -1,5 +1,8 @@
 module.exports = [
   'traditional',
+  'semi-traditional',
+  'modern',
+  'old',
   'romantic',
   'sad',
   'dong',
@@ -7,5 +10,5 @@ module.exports = [
   'baha',
   'sohrai',
   'dasai',
-  'guru kunami',
+  'nehor',
 ];
