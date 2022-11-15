@@ -1,6 +1,6 @@
 exports.onListening = (server) => {
   const { address, port } = server.address();
-  console.log(`Mind-Cast-API running at http://${address}:${port}`);
+  console.log(`Raha-API running at http://${address}:${port}`);
 };
 
 exports.onError = (err, port) => {

@@ -6,6 +6,7 @@ router.get('/', (req, res) => res.status(200).send({
   message: 'UHUL! The API is UP && RUNNING!!!',
 }));
 
+router.use('/blocker', require('./blocker'));
 router.use('/authors', require('./authors'));
 router.use('/podcasts', require('./podcasts'));
 router.use('/categories', require('./categories'));
