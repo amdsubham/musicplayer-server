@@ -1,6 +1,6 @@
 module.exports = [
   'traditional',
-  'semi-traditional',
+  'semi traditional',
   'modern',
   'old',
   'romantic',
