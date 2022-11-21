@@ -17,9 +17,9 @@ exports.read = async (req, res, next) => {
       const authors = await AuthorDAO.read();
 
       return res.status(200).send({
-        hottestPodcasts: shuffleArray(podcasts).slice(0, 18),
-        trendingAuthors: shuffleArray(authors).slice(0, 18),
-        newReleases: shuffleArray(podcasts).slice(0, 18),
+        hottestPodcasts: shuffleArray(podcasts),
+        trendingAuthors: shuffleArray(authors),
+        newReleases: shuffleArray(podcasts),
       });
     }
 
@@ -31,9 +31,9 @@ exports.read = async (req, res, next) => {
     const authors = await AuthorDAO.filterByCategory(queryCategories);
 
     return res.status(200).send({
-      hottestPodcasts: shuffleArray(podcasts).slice(0, 18),
-      trendingAuthors: shuffleArray(authors).slice(0, 18),
-      newReleases: shuffleArray(podcasts).slice(0, 18),
+      hottestPodcasts: shuffleArray(podcasts),
+      trendingAuthors: shuffleArray(authors),
+      newReleases: shuffleArray(podcasts),
     });
   } catch (err) {
     next(err);
